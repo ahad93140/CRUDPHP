@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+</head>
+<body>
+
+<form action="iinscr.php" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" required>
+
+    <label for="age">Âge :</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="metier">Quel est votre métier :</label>
+    <select id="metier" name="metier">
+        <option value="cadre">Cadre</option>
+        <option value="fonctionnaire">Fonctionnaire</option>
+        <option value="ouvrier">Ouvrier</option>
+        <option value="pdg">PDG</option>
+    </select>
+
+
+    <label for="pays_res">Pays :</label>
+    <input type="text" id="pays_res" name="pays_res" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mdp">Mot de passe :</label>
+    <input type="password" id="mdp" name="mdp" required>
+
+    <button type="submit" class="submit" onclick="window.location.href='MENU.html';">Je m'inscris</button>
+    <button type="submit" class="submit" onclick="window.location.href='phpcrud.html';">Connectez vous</button>
+</form>
+
+</body>
+</html>
+

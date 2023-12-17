@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier Membre</title>
+    <h1>MODIFIER</h1>
+</head>
+<body>
+<form method="post" action="MENU.php">
+    <div class="form">
+        <br>
+        <h2>Formulaire</h2>
+
+        <div class="input-container ic1">
+            <select id="modifier" name="modifier" required>
+                <option value="" disabled selected>Choisir un nom>
+            </select>
+            <label for="modifier" class="placeholder">Sélectionnez un membre</label>
+        </div>
+
+        <button type="submit" class="submit">Valider</button>
+
+        <h1>Details du Membre</h1>
+
+        <form>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" value="<?php echo $membre['nom']; ?>" readonly>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" value="<?php echo $membre['prenom']; ?>" readonly>
+
+            <!-- Ajoutez d'autres champs selon votre schéma de base de données -->
+
+            <a href="MENU.php?id=<?php echo $membre['id']; ?>">Modifier</a>
+        </form>
+
+
+
+
+
+
+
+
+    </div>
+</form>
+</body>
+</html>
